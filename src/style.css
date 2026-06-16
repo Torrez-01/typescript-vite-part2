@@ -1,0 +1,52 @@
+:root {
+  --color-primary: #42b883;
+  --color-dark: #35495e;
+  --font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.warehouse-header {
+  background: linear-gradient(135deg, #42b883 0%, #35495e 100%);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.btn-logout {
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  transform: scale(1.05);
+}
